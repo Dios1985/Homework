@@ -10,9 +10,20 @@ print('Задача 1. Кубы чисел')
 # 1 ** 3 = 1
 # 2 ** 3 = 8
 # 3 ** 3 = 27
+
 N = int(input('Введите число: '))
-i = 1
-while i <= N:
-    result = i ** 3
-    print(i, '**', N, '=', result)
-    i += 1
+number = 1
+while number <= N:
+    result = number ** 3
+    print(number, '**', N, '=', result)
+    number += 1
+
+#либо
+
+N = int(input('Введите число: '))
+number = 1
+
+while number <= N:
+    result = number ** 3
+    print(f'{number} ** 3 = {result}')
+    number += 1
