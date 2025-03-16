@@ -11,3 +11,12 @@
 # Пример 2
 # Введите число: 0
 # Кол-во цифр в числе: 1
+
+number = int(input('Введите число: '))
+count = 0
+while number != 0:
+    number //= 10
+    count += 1
+if count == 0:
+    count = 1
+print('Кол-во цифр в числе: ', count)
