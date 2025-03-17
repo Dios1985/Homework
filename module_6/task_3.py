@@ -64,3 +64,24 @@
 # Сколько задач решит Максим? 1
 # Рабочий день закончился. Всего выполнено задач: 15
 # Нужно зайти в магазин.
+
+print('Начался восьмичасовой рабочий день.')
+
+clock = 1
+count_zadach = 0
+whife_called = False
+while clock <= 8:
+    print(f'{clock}-й час')
+    zadacha = int(input('Сколько задач решит Максим? '))
+    count_zadach += zadacha
+    clock += 1
+
+    wife_call = int(input('Звонит жена. Взять трубку? (1 — да, 0 — нет):'))
+    if wife_call == 1:
+        whife_called = True
+        # TODO: write code...
+print('Рабочий день закончился. Всего выполнено задач: ', count_zadach)
+if whife_called:
+    print('Нужно зайти в магазин.')
+
+# не знаю, как выполнить дополнительное задание((
