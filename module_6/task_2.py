@@ -20,3 +20,5 @@ while number != 0:
 if count == 0:
     count = 1
 print('Кол-во цифр в числе: ', count)
+
+# Принято

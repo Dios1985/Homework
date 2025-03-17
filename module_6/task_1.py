@@ -17,7 +17,11 @@ while number <= N:
     result = number ** 3
     print(number, '**', N, '=', result)
     number += 1
-
+# TODO работает правильно, но вывод не корректный)
+#  Введите число: 7
+#  1 ** 7 = 1
+#  2 ** 7 = 8
+#  3 ** 7 = 27
 #либо
 
 N = int(input('Введите число: '))
@@ -27,3 +31,6 @@ while number <= N:
     result = number ** 3
     print(f'{number} ** 3 = {result}')
     number += 1
+
+# А тут верный)
+# Принято

@@ -28,3 +28,5 @@ while True:
     else:
         print('Вы угадали! Число попыток: ', count)
         break
+
+# Принято

@@ -28,5 +28,8 @@ while x < y:
     interest = x * p // 100
     x += interest
     year += 1
+    # TODO не хватает % после p
     print(f'{year}-ый год. {x - interest} + {p} = {x}')
 print('Кол-во лет для достижения порога: ', year)
+
+# Принято
