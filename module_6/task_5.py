@@ -14,3 +14,17 @@
 # Число больше, чем нужно. Попробуйте ещё раз!
 # Введите число: 7
 # Вы угадали! Число попыток: 4
+
+correct_number = 7
+count = 0
+
+while True:
+    number = int(input('Введите число: '))
+    count += 1
+    if number > correct_number:
+        print('Число больше, чем нужно. Попробуйте ещё раз!')
+    elif number < correct_number:
+        print('Число меньше, чем нужно. Попробуйте ещё раз!')
+    else:
+        print('Вы угадали! Число попыток: ', count)
+        break
