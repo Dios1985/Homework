@@ -18,3 +18,16 @@ print('Задача 4. Отрезок')
 # 9
 # 12
 # Среднее арифметическое этих чисел: 4.5
+
+start = int(input('Начало отрезка: '))
+end = int(input('Конец отрезка: '))
+summ = 0
+count = 0
+
+for number in range(start, end + 1):
+    if number % 3 == 0:
+        print(number)
+        count += 1
+        summ += number
+        average_summ = summ / count
+print('Среднее арифметическое этих чисел: ', average_summ)
