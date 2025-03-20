@@ -10,3 +10,11 @@ print('Задача 5. Замечательные числа')
 # Замечательные числа в диапазоне двузначных:
 # 15
 # 24
+
+for number in range(10, 100):
+    desyatki = number // 10
+    edinici = number % 10
+    summ = desyatki * edinici * 3
+    if summ == number:
+        print('Замечательные числа в диапазоне двузначных:') # не пойму, как вывести данное описание вне цикла
+        print(summ)
