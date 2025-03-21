@@ -16,8 +16,22 @@ print('Задача 2. Посчитай чужую зарплату...')
 # Средняя зарплата за год: 37916.6
 
 summ = 0
-for month in range(12):
+for month in range(2):
     salary = int(input('Введите зарплату сотрудника: '))
     summ += salary
 average_salary = salary / month
 print('Средняя зарплата за год: ', average_salary)
+
+# TODO используйте переменные которые могут не существовать (добавьте изначальную инициализацию
+#  Задача 2. Посчитай чужую зарплату...
+#  Введите зарплату сотрудника:
+#  Traceback (most recent call last):
+#    File "C:\Users\Admin\PycharmProjects\sb\Dios1985\Homework\module_7\task_2.py", line 20, in <module>
+#      salary = int(input('Введите зарплату сотрудника: '))
+#               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#  ValueError: invalid literal for int() with base 10: ''
+# TODO в целом предологаю, что вы используете не ту переменную:
+#  Задача 2. Посчитай чужую зарплату...
+#  Введите зарплату сотрудника: 1000
+#  Введите зарплату сотрудника: 2000
+#  Средняя зарплата за год:  2000.0
