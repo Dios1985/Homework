@@ -19,5 +19,5 @@ summ = 0
 for month in range(12):
     salary = int(input('Введите зарплату сотрудника: '))
     summ += salary
-average_salary = salary / (month + 1) # А если сделать так?
+average_salary = salary / month
 print('Средняя зарплата за год: ', average_salary)

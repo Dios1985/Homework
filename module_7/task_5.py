@@ -16,5 +16,6 @@ for number in range(10, 100):
     edinici = number % 10
     summ = desyatki * edinici * 3
     if summ == number:
+        # TODO просто вынесите этот принт перед циклом
         print('Замечательные числа в диапазоне двузначных:') # не пойму, как вывести данное описание вне цикла
         print(summ)
