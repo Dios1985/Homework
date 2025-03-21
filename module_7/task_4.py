@@ -29,7 +29,11 @@ for number in range(start, end + 1):
         print(number)
         count += 1
         summ += number
-        average_summ = summ / count
+if count > 0:
+    average_summ = summ / count
+    print('Среднее арифметическое этих чисел: ', average_summ)
+else:
+    print('Нет чисел кратных 3')
 # TODO лучше посчитать 1 раз, уже после цикла, ибо может возникнуть ошибка если не будет 3 на отрезке:
 #  Задача 4. Отрезок
 #  Начало отрезка: 1
