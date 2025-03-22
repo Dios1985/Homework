@@ -30,5 +30,5 @@ for _ in range(month):
 #  В целом вам лучше вынести переменную month перед циклом month = 12
 #  А сам цикл итерировать уже по этой переменной for _ in range(month):
 #  Ну а с переменной где у вас сумма зарплаты думаю вы уже поняли)
-average_salary = summ / (month) # А если сделать так?
+average_salary = summ / (month)
 print('Средняя зарплата за год: ', average_salary)
