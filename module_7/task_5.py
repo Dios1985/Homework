@@ -18,3 +18,5 @@ for number in range(10, 100):
     summ = desyatki * edinici * 3
     if summ == number:
         print(summ)
+
+# Принято
