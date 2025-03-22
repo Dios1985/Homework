@@ -34,14 +34,8 @@ if count > 0:
     print('Среднее арифметическое этих чисел: ', average_summ)
 else:
     print('Нет чисел кратных 3')
-# TODO лучше посчитать 1 раз, уже после цикла, ибо может возникнуть ошибка если не будет 3 на отрезке:
-#  Задача 4. Отрезок
-#  Начало отрезка: 1
-#  Конец отрезка: 2
-#  Traceback (most recent call last):
-#    File "C:\Users\Admin\PycharmProjects\sb\Dios1985\Homework\module_7\task_4.py", line 35, in <module>
-#      print('Среднее арифметическое этих чисел: ', average_summ)
-#                                                   ^^^^^^^^^^^^
-#  NameError: name 'average_summ' is not defined
+# TODO Работает как надо, но не забывайте удалять старый код
 
 print('Среднее арифметическое этих чисел: ', average_summ)
+
+# Принято
