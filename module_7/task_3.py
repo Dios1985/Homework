@@ -29,11 +29,11 @@ for i in range(student):
         count4 += 1
     elif score == 5:
         count5 += 1
-if count3 > count4:
+if count3 > count4 and count3 > count5:
     print('Сегодня больше троешников!')
-elif count4 > count3:
+elif count4 > count3 and count4 > count5:
     print('Сегодня больше хорошистов!')
-else:
+elif count5 > count3 and count5 > count4:
     print('Сегодня больше отличников!')
 
 # TODO ответ не верный, обратите внимание на ваши проверки, их надо дополнить
