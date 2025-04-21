@@ -113,18 +113,23 @@
 Число итераций не превосходит число рабочих часов.
 Используется флаг для учёта факта звонка жены.
 
-
 print('Начался восьмичасовой рабочий день.')
-total_clock = 0
-total_zadach = 0
-hour = 1
 
-while total_clock < 8:
-    print(hour,'-й час')
+total_task = 0
+hour = 1
+need_shop = False
+
+while hour < 8:
+    print(hour, '-й час')
+    task = int(input('Сколько задач решит Максим? '))
+    total_task += task
+
+    call = int(input('Звонит жена. Взять трубку? (1 — да, 0 — нет): '))
+    if call == 1:
+        need_shop = True
     hour += 1
-    zadacha = int(input('Сколько задач решит Максим? '))
-    total_zadach += zadacha
-    total_clock += 1
-print('Рабочий день закончился. Всего выполнено задач: ', total_zadach)
+print('Рабочий день закончился. Всего выполнено задач: ', total_task)
+if need_shop:
+    print('Нужно зайти в магазин.')
 
 
