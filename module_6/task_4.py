@@ -19,3 +19,16 @@
 
 Что оценивается
 Результат вычислений корректен.
+
+X = int(input('Вклад в банке: '))
+P = int(input('Проценты: '))
+Y = int(input('Порог вклада: '))
+year = 0
+
+while X < Y:
+    year += 1
+    interest = X * P // 100
+    X += interest
+    print(f"{year} год. {X - interest} + {P}% = {X}")
+print('Кол-во лет для достижения порога: ', year)
+
