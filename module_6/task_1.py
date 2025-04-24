@@ -19,5 +19,5 @@ Input содержит корректное приглашение для вво
 number = int(input('Введите число: '))
 count = 1
 while count <= number:
-    print(count, '**', number, '=', count ** number)
+    print(count, '** 3 =', count ** 3)
     count += 1
