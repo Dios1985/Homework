@@ -20,3 +20,12 @@
 Результат вывода соответствует условию.
 Для решения использован цикл for и range c шагом.
 
+print('Информация о запасах гречки:')
+total_month = 1
+total_buckwheat = 100
+
+for buckwheat in range(total_buckwheat - 4, -1, -4):
+    print('Через', total_month, 'месяц: ', buckwheat, 'кг гречки в запасе')
+    total_month += 1
+print('Запасы гречки закончились.')
+
