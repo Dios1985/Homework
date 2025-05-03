@@ -31,3 +31,12 @@
 В выводе присутствует общая сумма долга.
 Формат вывода соответствует примеру (не выведены числа без описания).
 Для решения использован цикл for и range c шагом.
+
+total_debtor = int(input('Введите количество должников: '))
+total_summ = 0
+
+for debtor in range(0, total_debtor, 5):
+    print('Должник с номером', debtor)
+    summ = int(input('Сколько должны? '))
+    total_summ += summ
+print('Общая сумма долга: ', total_summ)
