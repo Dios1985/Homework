@@ -43,7 +43,7 @@
 total_time = int(input('Введите время для обратного отсчёта (в секундах): '))
 print('Таймер установлен на', total_time, 'секунд.')
 
-for second in range(total_time, 0, -1)
+for second in range(total_time, 0, -1):
     print('Осталось:', second, 'секунд')
     question = int(input('Введите 1, если еда готова, или 0, чтобы продолжить: '))
     if question == 1:
