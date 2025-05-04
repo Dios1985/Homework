@@ -25,8 +25,6 @@ total_month = 1
 total_buckwheat = 100
 
 for buckwheat in range(total_buckwheat - 4, -1, -4):
-    # TODO запятая сама по себе добавляет пробел, поэтому в выводе он у вас задублировался:
-    #  Через 1 месяц:  96 кг гречки в запасе
     print('Через', total_month, 'месяц: ', buckwheat, 'кг гречки в запасе')
     total_month += 1
 print('Запасы гречки закончились.')
