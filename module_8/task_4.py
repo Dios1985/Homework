@@ -45,15 +45,15 @@
 start = int(input('Введите начало отрезка: '))
 end = int(input('Введите конец отрезка: '))
 step = int(input('Введите шаг: '))
-if step < 0:
-    for x in range(end, start - 1, step):
-        y = (x ** 3) + (2 * x ** 2) - (4 * x) + 1
-        print('В точке', x, 'функция равна', y)
-elif step > 0:
-    # TODO для отрицательных чисел пробел между знаком и числом не ставится: -step
-    for x in range(start,  end - 1, - step):
-        y = (x ** 3) + (2 * x ** 2) - (4 * x) + 1
-        print('В точке', x, 'функция равна', y)
+
+if step > 0:
+    step = -step
+if start > end:
+    start, end = end, start
+
+for x in range(end, start - 1, step):
+    y = (x ** 3) + (2 * x ** 2) - (4 * x) + 1
+    print('В точке', x, 'функция равна', y)
 
 # TODO дублирование кода + не обработали: некорректные значения для диапазона
 #  проверьте корректность ввода шага (шаг должен быть отрицательным)
