@@ -24,3 +24,12 @@ aaababbaab
 
 Решение:
 
+stable = input('Введите 10 стойл в одну строку. a — свободное стойло, b — занятое: ')
+summ = 0
+for index, number in enumerate(stable, start=1):
+    if number == 'b':
+        summ += index * 2
+    elif number == 'a':
+        summ += 0
+
+print('Произведено молока за день: ', summ)
