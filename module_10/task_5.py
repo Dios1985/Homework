@@ -13,3 +13,19 @@
 Что оценивается
 Результат вывода соответствует условию.
 Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
+
+total_number = int(input('Введите количество чисел: '))
+total_summ = 0
+summ = 0
+max_number = 0
+for num in range(total_number):
+    number = int(input('Введите число: '))
+    while number != 0:
+        summ += number % 10
+        number //= 10
+    if summ > total_summ:
+        total_summ = summ
+        max_number = number
+    summ = 0
+
+print('Число', max_number, 'имеет максимальную сумму цифр:', total_summ)
