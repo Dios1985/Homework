@@ -22,3 +22,17 @@
 Что оценивается
 Результат вывода соответствует условию.
 Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
+
+total_number = int(input('Введите количество чисел: '))
+count = 0
+
+for num in range(total_number):
+    number = int(input('Введите число: '))
+    Prime = True
+    for divider in range(2, number):
+        if number % divider == 0:
+            Prime = False
+            break
+    if Prime:
+        count += 1
+print('Количество простых чисел в последовательности: ', count)
