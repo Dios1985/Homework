@@ -30,4 +30,3 @@ for num in range(total_number):
 
 print('Число', max_number, 'имеет максимальную сумму цифр:', total_summ)
 
-# Принято
