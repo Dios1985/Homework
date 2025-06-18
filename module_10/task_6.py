@@ -27,7 +27,7 @@
 #  а пробелы == общее количество итераций - 2 * на номер итерации - номер итерации
 
 
-weight = int(input('Введите высоту пирамиды: '))
-for row in range(1, weight + 1):
-    print('    ', end='')
-    print('#' * row)
+height = int(input('Введите высоту ёлочки: '))
+for row in range(1, height + 1):
+    spaces = ' ' * (height - row)
+    print(spaces + '#' * (2 * row - 1))
