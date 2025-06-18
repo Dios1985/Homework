@@ -29,13 +29,13 @@ count = 0
 for num in range(total_number):
     number = int(input('Введите число: '))
     #  TODO в UpperCamelCase называются только классы, обычные переменные должны быть полностью в нижнем регистре
-    Prime = True
+    prime = True
     for divider in range(2, number):
         if number % divider == 0:
 
-            Prime = False
+            prime = False
             break
-    if Prime:
+    if prime:
         count += 1
 print('Количество простых чисел в последовательности: ', count)
 
