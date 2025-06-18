@@ -24,5 +24,5 @@ for a in range(1, number + 1):
     for b in range(a):
         # TODO лишний пробел после функции
         # TODO при передаче именованных параметров в функцию, пробелы не ставятся: end = '\t' -> end='\t'
-        print (a, end = '\t')
+        print(a, end='\t')
     print()
