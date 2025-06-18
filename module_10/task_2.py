@@ -20,8 +20,8 @@
 
 number = int(input('Введите число: '))
 # TODO не информативные имена переменных цикла
-for a in range(1, number + 1):
-    for b in range(a):
+for row in range(1, number + 1):
+    for col in range(a):
         # TODO лишний пробел после функции
         # TODO при передаче именованных параметров в функцию, пробелы не ставятся: end = '\t' -> end='\t'
         print(a, end='\t')
