@@ -21,14 +21,16 @@
 # TODO добавьте инпуты: "Пусть ширину и высоту рамки определяет пользователь."
 
 # TODO не информативные имена переменных цикла
-for a in range(11):
-    for b in range(31):
-        if b == 0 or b == 30:
+height = int(input('Введите высоту рамки: '))
+widht = int(input('Введите ширину рамки: '))
+for row in range(height + 1):
+    for col in range(widht + 1):
+        if col == 0 or col == widht:
             # TODO при передаче именованных параметров в функцию, пробелы не ставятся: end = '\t' -> end='\t'
-            print('|', end = '')
-        elif a == 0 or a == 10:
-            print('-', end = '')
+            print('|', end='')
+        elif row == 0 or row == height:
+            print('-', end='')
         else:
-            print(' ', end = '')
+            print(' ', end='')
     print()
 
