@@ -31,3 +31,5 @@ height = int(input('Введите высоту пирамиды: '))
 for row in range(height + 1):
     spaces = ' ' * (height - row)
     print(spaces + '#' * (2 * row - 1))
+
+# Принято
