@@ -22,15 +22,16 @@
 
 height = int(input('Введите высоту рамки: '))
 widht = int(input('Введите ширину рамки: '))
-for row in range(height + 1):
-    for col in range(widht + 1):
-        if col == 0 or col == widht:
+for row in range(height):
+    for col in range(widht):
+        if col == 0 or col == widht - 1:
             print('|', end='')
-        elif row == 0 or row == height:
+        elif row == 0 or row == height - 1:
             print('-', end='')
         else:
             print(' ', end='')
     print()
+
 
 # TODO добавляется по 1 лишней палке по высоте и ширине:
 #  Введите высоту рамки: 3
