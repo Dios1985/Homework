@@ -21,5 +21,5 @@
 for row in range(6):
     for col in range(6):
         # TODO теперь переменных не существует и программа падает с ошибкой при запуске
-        print(a + b * 2, end='\t')
+        print(row + col * 2, end='\t')
     print()
