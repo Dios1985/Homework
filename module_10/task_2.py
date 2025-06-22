@@ -21,7 +21,8 @@
 number = int(input('Введите число: '))
 
 for row in range(1, number + 1):
-    # TODO теперь переменной не существует и программа падает с ошибкой при запуске
     for col in range(row):
         print(row, end='\t')
     print()
+
+# Принято
