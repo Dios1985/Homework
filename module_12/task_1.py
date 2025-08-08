@@ -11,3 +11,13 @@
 Что оценивается
 Результат вывода соответствует условию, формат вывода соответствует примеру.
 Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
+
+def summa_n(total_number):
+    total_summ = 0
+    for number in range(1, total_number + 1):
+        total_summ += number
+    print('Сумма чисел от 1 до', total_number, 'равна', total_summ)
+
+
+total_number = int(input('Введите число: '))
+summa_n(total_number)
