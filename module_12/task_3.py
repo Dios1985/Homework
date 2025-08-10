@@ -30,18 +30,22 @@
 
 # TODO между и после методов должны быть 2 пустые строчки
 def programm():
-    number = int(input('Введите число: '))
-    print('Введите номер действия:\n'
-          '1 - сумма цифр\n'
-          '2 - максимальная цифра')
-    choise = int(input('3 - минимальная цифра: '))
 
-    if choise == 1:
-        summ(number)
-    elif choise == 2:
-        maximum(number)
-    elif choise == 3:
-        minimum(number)
+
+    while True:
+        number = int(input('Введите число: '))
+        print('Введите номер действия:\n'
+              '1 - сумма цифр\n'
+              '2 - максимальная цифра')
+        choise = int(input('3 - минимальная цифра: '))
+
+        if choise == 1:
+            summ(number)
+        elif choise == 2:
+            maximum(number)
+        elif choise == 3:
+            minimum(number)
+
 
 def summ(number):
     summ = 0
@@ -52,7 +56,6 @@ def summ(number):
     print('Сумма чисел:', summ)
     # TODO у вас возникла рекурсия, это специфичный инструмент, который не подходит под эту задачу.
     #  Что бы зациклить программу используйте обычный цикл
-    programm()
 
 def maximum(number):
     maximum = 0
@@ -62,7 +65,6 @@ def maximum(number):
             maximum = last_number
         number //= 10
     print('Максимальная цифра:', maximum)
-    programm()
 
 def minimum(number):
     minimum = 999
@@ -72,6 +74,6 @@ def minimum(number):
             minimum = last_number
         number //= 10
     print('Минимальная цифра:', minimum)
-    programm()
+
 
 programm()
