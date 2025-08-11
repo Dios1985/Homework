@@ -29,10 +29,7 @@
 # Все числа, необходимые для работы функции, передаются через её параметры (аргументы).
 
 def programm():
-    # TODO Внутри фукнции максимум 2 пустые строчки, между строчками кода
-
-
-    while True:
+      while True:   # TODO Внутри фукнции максимум 2 пустые строчки, между строчками кода
         number = int(input('Введите число: '))
         print('Введите номер действия:\n'
               '1 - сумма цифр\n'
@@ -55,6 +52,7 @@ def summ(number):
         number //= 10
     print('Сумма чисел:', summ)
 
+
 def maximum(number):
     maximum = 0
     while number != 0:
@@ -63,6 +61,7 @@ def maximum(number):
             maximum = last_number
         number //= 10
     print('Максимальная цифра:', maximum)
+
 
 def minimum(number):
     minimum = 999
