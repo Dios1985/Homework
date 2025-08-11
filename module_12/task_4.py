@@ -18,13 +18,10 @@
 # Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
 
 # TODO функция должна принимать текст, а не запрашивать внутри себя
-def count_letters():
-    text = input('Введите текст: ')
+def count_letters(text, number, word):
+
     count_number = 0
     count_word = 0
-
-    number = input('Какую цифру ищем? ')
-    word = input('Какую букву ищем? ')
 
     for symbol in text:
         if symbol == number:
@@ -36,4 +33,7 @@ def count_letters():
     print('Количество букв', word, ':', count_word)
 
 
-count_letters()
+text = input('Введите текст: ')
+number = input('Какую цифру ищем? ')
+word = input('Какую букву ищем? ')
+count_letters(text, number, word)
