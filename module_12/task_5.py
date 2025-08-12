@@ -62,7 +62,6 @@ def rock_paper_scissors():
         print('Вы проиграли')
 
 
-
 def guess_the_number():
     print('Игра угадай число началась')
     start = 1
