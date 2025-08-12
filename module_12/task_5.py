@@ -56,10 +56,11 @@ def rock_paper_scissors():
     if choise == 'камень' and computer_choise == 'ножницы' or choise == 'ножницы' and computer_choise == 'бумага' or choise == 'бумага' and computer_choise == 'камень':
         print('Вы победили')
     # TODO проще проверить на ничью а в остальных случаях отправить в проигрыш
-    elif choise == 'камень' and computer_choise == 'бумага' or choise == 'ножницы' and computer_choise == 'камень' or choise == 'бумага' and computer_choise == 'ножницы':
-        print('Вы проиграли')
-    else:
+    elif choise == 'камень' and computer_choise == 'камень' or choise == 'ножницы' and computer_choise == 'ножницы' or choise == 'бумага' and computer_choise == 'бумага':
         print('Ничья')
+    else:
+        print('Вы проиграли')
+
 
 
 def guess_the_number():
