@@ -31,6 +31,9 @@
 # TODO используйте import random, это сделает игры по интереснее
 
 
+import random
+
+
 def main_menu():  # Здесь главное меню игры
     def user_name_printout(user_name):
         print("Привет", user_name)
@@ -50,16 +53,21 @@ def main_menu():  # Здесь главное меню игры
 
 
 def rock_paper_scissors():
+    choice = ('камень', 'ножницы', 'бумага')
     print('Игра камень, ножницы, бумага началась')
-    choise = input('Что выберете: камень, ножницы или бумага? ')
-    computer_choise = input('Что выберет компьютер: камень, ножницы или бумага: ')
-    if choise == 'камень' and computer_choise == 'ножницы' or choise == 'ножницы' and computer_choise == 'бумага' or choise == 'бумага' and computer_choise == 'камень':
-        print('Вы победили')
-    # TODO проще проверить на ничью а в остальных случаях отправить в проигрыш
-    elif choise == 'камень' and computer_choise == 'камень' or choise == 'ножницы' and computer_choise == 'ножницы' or choise == 'бумага' and computer_choise == 'бумага':
-        print('Ничья')
-    else:
-        print('Вы проиграли')
+    while True:
+        user_choise = input('Что выберете: камень, ножницы или бумага? ')
+
+        computer_choise = random.choice(choice)
+        print(f'Компьютер выбрал: {computer_choise}')
+
+        if user_choise == 'камень' and computer_choise == 'ножницы' or user_choise == 'ножницы' and computer_choise == 'бумага' or user_choise == 'бумага' and computer_choise == 'камень':
+            print('Вы победили')
+        # TODO проще проверить на ничью а в остальных случаях отправить в проигрыш
+        elif user_choise == computer_choise:
+            print('Ничья')
+        else:
+            print('Вы проиграли')
 
 
 def guess_the_number():
