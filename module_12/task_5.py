@@ -53,13 +53,14 @@ def main_menu():  # Здесь главное меню игры
 
 
 def rock_paper_scissors():
-    choice = ('камень', 'ножницы', 'бумага')
     print('Игра камень, ножницы, бумага началась')
+    choice = ('камень', 'ножницы', 'бумага')
+
     while True:
         user_choise = input('Что выберете: камень, ножницы или бумага? ')
 
         computer_choise = random.choice(choice)
-        print(f'Компьютер выбрал: {computer_choise}')
+        print('Компьютер выбрал: ', computer_choise)
 
         if user_choise == 'камень' and computer_choise == 'ножницы' or user_choise == 'ножницы' and computer_choise == 'бумага' or user_choise == 'бумага' and computer_choise == 'камень':
             print('Вы победили')
