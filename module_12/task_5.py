@@ -27,10 +27,6 @@
 # Игры работают корректно.
 # В input содержится корректное приглашение для ввода.
 # Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
-
-# TODO используйте import random, это сделает игры по интереснее
-
-
 import random
 
 
@@ -64,7 +60,6 @@ def rock_paper_scissors():
 
         if user_choise == 'камень' and computer_choise == 'ножницы' or user_choise == 'ножницы' and computer_choise == 'бумага' or user_choise == 'бумага' and computer_choise == 'камень':
             print('Вы победили')
-        # TODO проще проверить на ничью а в остальных случаях отправить в проигрыш
         elif user_choise == computer_choise:
             print('Ничья')
         else:
@@ -89,3 +84,5 @@ def guess_the_number():
 
 
 main_menu()
+
+# Принято
