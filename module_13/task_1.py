@@ -27,8 +27,6 @@
 Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
 
 import math
-
-
 def answer(number):
     stepen = math.floor(math.log10(number))
 
@@ -38,7 +36,7 @@ def answer(number):
     else:
         while number < 1:
             number *= 10
-    text = 'Формат плавающей точки: x = ' + str(number) + ' * 10 ** ' + str(stepen)
+    text = 'Формат плавающей точки: x = ' + str(round(number, 2)) + ' * 10 ** ' + str(stepen) #исправил, сделал округление
     return text
 
 
