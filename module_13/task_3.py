@@ -20,24 +20,27 @@
 
 def reverse_number(number):
     summ = ''
+    if number < 0:
+        return 0
     while number != 0:
         last_number = number % 10
         summ += str(last_number)
         number //= 10
     return summ
 
+
 # TODO в этой функции нет проверки на то, что число неотрицательное как будто бы нет смысла,
 #  просто 2 раза вызовите reverse_number в основном коде
-def reverse(a, b):
+def reverse(first, second):
     # TODO не информативное имена параметров
-    reverse_a = reverse_number(a)
-    reverse_b = reverse_number(b)
-    return reverse_a, reverse_b
+    first_reverse_number = reverse_number(first)
+    second_reverse_number = reverse_number(second)
+    return first_reverse_number, second_reverse_number
 
 
 first = int(input('Введите первое число: '))
 second = int(input('Введите второе число: '))
-reverse_a, reverse_b = reverse(first, second)
+first_reverse_number, second_reverse_number = reverse(first, second)
 
-print('Первое число наоборот: ', reverse_a)
-print('Второе число наоборот: ', reverse_b)
+print('Первое число наоборот: ', first_reverse_number)
+print('Второе число наоборот: ', second_reverse_number)
