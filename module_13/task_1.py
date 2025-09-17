@@ -27,6 +27,7 @@
 Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
 
 import math
+
 def answer(number):
     stepen = math.floor(math.log10(number))
 
