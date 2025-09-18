@@ -44,12 +44,13 @@
 # Решение:
 
 def main():
-    # TODO вам нужно только 3 функции: main, count_numbers и функция для изменения числа
     first_n = int(input("Введите первое число: "))
     first_num_count = count_numbers(first_n)
 
-    if first_num_count < 3:  # TODO если в числе меньше 3 цифр, то не нужно запрашивать второе число
+    if first_num_count < 3:
         print("В первом числе меньше трёх цифр.\f")
+        # TODO у вас возникла рекурсия, это специфичный инструмент который не подходит для текущей задачи
+        #  кроме того, после выхода из 2 вызова функции первый продолжит выполнение
         main()
 
     second_n = int(input("\nВведите второе число: "))
@@ -57,6 +58,7 @@ def main():
 
     if second_num_count < 4:
         print("Во втором числе меньше четырёх цифр.\f")
+        # TODO у вас возникла рекурсия, это специфичный инструмент который не подходит для текущей задачи
         main()
 
     first_n = change_number(first_n, first_num_count, 3, 'первое')
@@ -75,7 +77,7 @@ def count_numbers(count):
 
 
 def change_number(number, num_count, total_count, name):
-    # TODO код дублируется с фунцией change_second_number
+    # TODO Параметр total_count не используется
     last_digit = number % 10
     first_digit = number // 10 ** (num_count - 1)
     between_digits = number % 10 ** (num_count - 1) // 10
@@ -83,5 +85,5 @@ def change_number(number, num_count, total_count, name):
     print('Изменённое', name, 'число:', number)
     return number
 
-# TODO после функции должны быть 2 пустые строчки
+
 main()

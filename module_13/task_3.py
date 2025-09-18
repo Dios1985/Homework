@@ -29,10 +29,7 @@ def reverse_number(number):
     return summ
 
 
-# TODO в этой функции нет проверки на то, что число неотрицательное как будто бы нет смысла,
-#  просто 2 раза вызовите reverse_number в основном коде
 def reverse(first, second):
-    # TODO не информативное имена параметров
     first_reverse_number = reverse_number(first)
     second_reverse_number = reverse_number(second)
     return first_reverse_number, second_reverse_number
@@ -44,3 +41,5 @@ first_reverse_number, second_reverse_number = reverse(first, second)
 
 print('Первое число наоборот: ', first_reverse_number)
 print('Второе число наоборот: ', second_reverse_number)
+
+# Принято
