@@ -24,33 +24,30 @@
 # Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
 #
 
+def maximum_of_three(a, b, c):
+    maximum = maximum_of_two(first_number, second_number)
+    # TODO не информативное имена параметров
+    # TODO функция должна принимать 3 числа, у вас принимает только 2
+    # TODO фунционал не должен дублироватся с фунцией максимума из 2х
+    if maximum > c:
+        return maximum
+    elif c > maximum:
+        return c
+
+
 def maximum_of_two(a, b):
     # TODO не информативное имена параметров
     # TODO эту переменную можно убрать и сразу возращать то число которое больше
-    maximum = 0
     if a > b:
-        maximum = a
+        return a
     elif b > a:
-        maximum = b
-    return maximum
-
-
-def maximum_of_three(a, b):
-    # TODO не информативное имена параметров
-    maximum = 0
-    # TODO функция должна принимать 3 числа, у вас принимает только 2
-    # TODO фунционал не должен дублироватся с фунцией максимума из 2х
-    if a > b:
-        maximum = a
-    elif b > a:
-        maximum = b
-    return maximum
+        return b
 
 
 first_number = int(input('Введите первое число: '))
 second_number = int(input('Введите второе число: '))
 third_number = int(input('Введите третье число: '))
 
-maximum = maximum_of_two(first_number, second_number)
-maximum_of_three(maximum, third_number)
-print('Самое большое число: ', maximum_of_three(maximum, third_number))
+final = maximum_of_three(first_number, second_number, third_number)
+
+print('Самое большое число: ', final)
