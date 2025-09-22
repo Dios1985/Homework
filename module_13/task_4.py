@@ -45,21 +45,19 @@
 
 def main():
     # TODO в изначальном примере число не бесконечно запрашивалось, а прерывалась работа программы
-    while True:
-        first_n = int(input("Введите первое число: "))
-        first_num_count = count_numbers(first_n)
+    first_n = int(input("Введите первое число: "))
+    first_num_count = count_numbers(first_n)
 
-        if first_num_count >= 3:
-            break
+    if first_num_count < 3:
         print("В первом числе меньше трёх цифр.\f")
+        return
 
-    while True:
-        second_n = int(input("\nВведите второе число: "))
-        second_num_count = count_numbers(second_n)
+    second_n = int(input("\nВведите второе число: "))
+    second_num_count = count_numbers(second_n)
 
-        if second_num_count >= 4:
-            break
+    if second_num_count < 4:
         print("Во втором числе меньше четырёх цифр.\f")
+        return
 
     first_n = change_number(first_n, first_num_count, 'первое')
     second_n = change_number(second_n, second_num_count, 'второе')
