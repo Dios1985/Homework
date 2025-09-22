@@ -19,9 +19,8 @@
 
 
 def reverse_number(number):
+    number = abs(number)
     summ = ''
-    if number < 0:
-        return 0
     while number != 0:
         last_number = number % 10
         summ += str(last_number)
@@ -31,16 +30,16 @@ def reverse_number(number):
 
 # TODO в этой функции нет проверки на то, что число неотрицательное как будто бы нет смысла,
 #  просто 2 раза вызовите reverse_number в основном коде
-def reverse(first, second):
+def reverse(num1, num2):
     # TODO не информативное имена параметров
-    first_reverse_number = reverse_number(first)
-    second_reverse_number = reverse_number(second)
-    return first_reverse_number, second_reverse_number
+    reverse_number_1 = reverse_number(num1)
+    reverse_number_2 = reverse_number(num2)
+    return reverse_number_1, reverse_number_2
 
 
 first = int(input('Введите первое число: '))
 second = int(input('Введите второе число: '))
-first_reverse_number, second_reverse_number = reverse(first, second)
+reverse_number_1, reverse_number_2 = reverse(first, second)
 
-print('Первое число наоборот: ', first_reverse_number)
-print('Второе число наоборот: ', second_reverse_number)
+print('Первое число наоборот: ', reverse_number_1)
+print('Второе число наоборот: ', reverse_number_2)
