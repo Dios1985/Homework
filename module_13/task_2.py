@@ -25,9 +25,9 @@
 #
 
 def maximum_of_three(a, b, c):
-    maximum = maximum_of_two(first_number, second_number)
     # TODO не информативное имена параметров
-    # TODO функция должна принимать 3 числа, у вас принимает только 2
+    # TODO вы испольуете глобальные переменные, а не параметры функции
+    maximum = maximum_of_two(first_number, second_number)
     # TODO фунционал не должен дублироватся с фунцией максимума из 2х
     if maximum > c:
         return maximum
@@ -37,9 +37,9 @@ def maximum_of_three(a, b, c):
 
 def maximum_of_two(a, b):
     # TODO не информативное имена параметров
-    # TODO эту переменную можно убрать и сразу возращать то число которое больше
     if a > b:
         return a
+    # TODO вместо этой проверки можно сразу вернуть b
     elif b > a:
         return b
 
