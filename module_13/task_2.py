@@ -24,24 +24,24 @@
 # Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
 #
 
-def maximum_of_three(a, b, c):
-    maximum = maximum_of_two(first_number, second_number)
+def maximum_of_three(number_1, number_2, number_3):
     # TODO не информативное имена параметров
-    # TODO функция должна принимать 3 числа, у вас принимает только 2
+    # TODO вы испольуете глобальные переменные, а не параметры функции
+    maximum = maximum_of_two(number_1, number_2)
     # TODO фунционал не должен дублироватся с фунцией максимума из 2х
-    if maximum > c:
+    if maximum > number_3:
         return maximum
-    elif c > maximum:
-        return c
+    else:
+        return number_3
 
 
-def maximum_of_two(a, b):
+def maximum_of_two(number_1, number_2):
     # TODO не информативное имена параметров
-    # TODO эту переменную можно убрать и сразу возращать то число которое больше
-    if a > b:
-        return a
-    elif b > a:
-        return b
+    if number_1 > number_2:
+        return number_1
+    # TODO вместо этой проверки можно сразу вернуть b
+    else:
+        return number_2
 
 
 first_number = int(input('Введите первое число: '))
