@@ -44,6 +44,7 @@
 # Решение:
 
 def main():
+    # TODO в изначальном примере число не бесконечно запрашивалось, а прерывалась работа программы
     while True:
         first_n = int(input("Введите первое число: "))
         first_num_count = count_numbers(first_n)
@@ -51,8 +52,6 @@ def main():
         if first_num_count >= 3:
             break
         print("В первом числе меньше трёх цифр.\f")
-        # TODO у вас возникла рекурсия, это специфичный инструмент который не подходит для текущей задачи
-        #  кроме того, после выхода из 2 вызова функции первый продолжит выполнение
 
     while True:
         second_n = int(input("\nВведите второе число: "))
@@ -61,7 +60,6 @@ def main():
         if second_num_count >= 4:
             break
         print("Во втором числе меньше четырёх цифр.\f")
-        # TODO у вас возникла рекурсия, это специфичный инструмент который не подходит для текущей задачи
 
     first_n = change_number(first_n, first_num_count, 'первое')
     second_n = change_number(second_n, second_num_count, 'второе')
@@ -79,7 +77,6 @@ def count_numbers(count):
 
 
 def change_number(number, num_count, name):
-    # TODO Параметр total_count не используется
     last_digit = number % 10
     first_digit = number // 10 ** (num_count - 1)
     between_digits = number % 10 ** (num_count - 1) // 10
