@@ -44,7 +44,6 @@
 # Решение:
 
 def main():
-    # TODO в изначальном примере число не бесконечно запрашивалось, а прерывалась работа программы
     first_n = int(input("Введите первое число: "))
     first_num_count = count_numbers(first_n)
 
@@ -84,3 +83,5 @@ def change_number(number, num_count, name):
 
 
 main()
+
+# Принято

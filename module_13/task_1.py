@@ -37,9 +37,6 @@ def answer(number):
     else:
         while number < 1:
             number *= 10
-    # TODO из-за того,что вы округляете до 2 знака, часть числа обрезается:
-    #  x = 9.23 * 10 ** 4
-    #  expected: x = 9.2345 * 10 ** 4
     text = 'Формат плавающей точки: x = ' + str(round(number, 10)) + ' * 10 ** ' + str(stepen) #исправил, сделал округление
     return text
 
@@ -47,3 +44,5 @@ def answer(number):
 number = float(input('Введите число: '))
 text = answer(number)
 print(text)
+
+# Принято
