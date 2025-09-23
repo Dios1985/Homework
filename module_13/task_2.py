@@ -24,25 +24,19 @@
 # Вывод содержит описание результата (выведенные числа сопровождаются текстовым описанием).
 
 
+
 def maximum_of_three(number_1, number_2, number_3):
     # TODO не информативное имена параметров
     # TODO вы испольуете глобальные переменные, а не параметры функции
     maximum = maximum_of_two(number_1, number_2)
     # TODO фунционал не должен дублироватся с фунцией максимума из 2х
-    if maximum > number_3:
-        return maximum
-    else:
-        return number_3
-
+    return maximum_of_two(maximum, number_3)
 
 def maximum_of_two(number_1, number_2):
-    # TODO не информативное имена параметров
     if number_1 > number_2:
         return number_1
-    # TODO вместо этой проверки можно сразу вернуть b
     else:
         return number_2
-
 
 first_number = int(input('Введите первое число: '))
 second_number = int(input('Введите второе число: '))
